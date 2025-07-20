@@ -37,6 +37,15 @@ public class PlayerController : NetworkBehaviour
     private void Update()
     {
         UpdateCamera();
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Cursor.lockState = CursorLockMode.None;
+        }
+        else if (Input.GetMouseButtonDown(0))
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
     }
 
     private void FixedUpdate()
@@ -47,7 +56,7 @@ public class PlayerController : NetworkBehaviour
     private void UpdateCamera()
     {
         if (!IsOwner) return;
-        
+
         var camera = GetComponentInChildren<Camera>();
         if (camera == null) return;
 
@@ -68,7 +77,7 @@ public class PlayerController : NetworkBehaviour
     private void UpdateMovement()
     {
         if (!IsOwner) return;
-        
+
         // Forward and backward
         _rb.velocity += transform.forward * (CreateForwardBackwardFloat(KeyCode.W, KeyCode.S) * speed);
 
