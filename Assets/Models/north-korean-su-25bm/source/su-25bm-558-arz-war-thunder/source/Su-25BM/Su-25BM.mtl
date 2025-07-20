@@ -1,0 +1,84 @@
+newmtl d35f19c2-dabc-4744-b109-4b3e7345a6c0
+Kd 1.000 1.000 1.000
+Ks 0.000 0.000 0.000
+Ns 30
+Ke 0.000 0.000 0.000
+map_Kd textures/su_25_558arz_c.jpg
+map_Ks textures/su_25_558arz_n_s.jpg
+map_normal textures/su_25_558arz_n_n.jpg
+map_ao textures/su_25_558arz_n_ao.jpg
+
+newmtl 6e7dae93-6cad-4338-ba89-f53684b53fcc
+Kd 1.000 0.000 1.000
+Ks 0.067 0.067 0.067
+Ns 30
+Ke 0.000 0.000 0.000
+
+newmtl 9d646384-7155-4953-a62b-2e249c338eb9
+Kd 1.000 1.000 1.000
+Ks 0.000 0.000 0.000
+Ns 30
+Ke 0.000 0.000 0.000
+map_Kd textures/su_25_pylon_c.jpg
+map_Ks textures/su_25_pylon_n_s.jpg
+map_normal textures/su_25_pylon_n_n.jpg
+map_ao textures/su_25_pylon_n_ao.jpg
+
+newmtl de10c08d-10c3-480d-be43-477f71ac114a
+Kd 1.000 1.000 1.000
+Ks 0.000 0.000 0.000
+Ns 30
+Ke 0.000 0.000 0.000
+map_Kd textures/su_25_558arz_interior_c.jpg
+map_Ks textures/su_25_558arz_interior_n_s.jpg
+map_normal textures/su_25_558arz_interior_n_n.jpg
+map_ao textures/su_25_558arz_interior_n_ao.jpg
+
+newmtl adf007cc-b58c-4135-8d0b-f15ed1ee8203
+Kd 0.000 0.000 0.000
+Ks 1.000 1.000 1.000
+Ns 255
+Ke 0.000 0.000 0.000
+d 0.17
+
+newmtl 6108826d-a5a5-41bd-832a-89d20894cb6b
+Kd 1.000 1.000 1.000
+Ks 0.000 0.000 0.000
+Ns 30
+Ke 0.000 0.000 0.000
+map_Kd textures/aircraft_inside3_a.jpg
+map_Ks textures/aircraft_inside3_n_s.jpg
+map_normal textures/aircraft_inside3_n_n.jpg
+map_ao textures/aircraft_inside3_n_ao.jpg
+
+newmtl 61c1bff0-040f-458c-8590-2e5f016486d2
+Kd 1.000 1.000 1.000
+Ks 0.000 0.000 0.000
+Ns 30
+Ke 0.000 0.000 0.000
+map_Kd textures/su_800l_su_17_22_25_drop_tank_c.jpg
+map_Ks textures/su_800l_su_17_22_25_drop_tank_n_s.jpg
+map_normal textures/su_800l_su_17_22_25_drop_tank_n_n.jpg
+map_ao textures/su_800l_su_17_22_25_drop_tank_n_ao.jpg
+
+newmtl 005199cf-68b6-4341-b368-d3d46a73c320
+Kd 0.000 0.000 0.000
+Ks 0.000 0.000 0.000
+Ns 255
+Ke 0.000 0.000 0.000
+d 0.9
+
+newmtl f557e00e-4b4b-4c8b-b6db-471efef3b06a
+Kd 0.000 0.000 0.000
+Ks 0.000 0.000 0.000
+Ns 255
+Ke 0.000 0.000 0.000
+d 0.9
+
+newmtl ca0acf11-1077-44f3-a3db-7b5057872c08
+Kd 0.000 0.000 0.000
+Ks 0.000 0.000 0.000
+Ns 255
+Ke 0.000 0.000 0.000
+d 0.9
+
