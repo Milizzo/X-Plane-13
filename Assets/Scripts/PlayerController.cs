@@ -19,6 +19,14 @@ public class PlayerController : NetworkBehaviour
 
     private Rigidbody _rb;
 
+    public override void OnNetworkSpawn()
+    {
+        if (!IsOwner)
+        {
+            GetComponentInChildren<Camera>().enabled = false;
+        }
+    }
+
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
