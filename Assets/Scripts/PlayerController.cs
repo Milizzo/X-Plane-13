@@ -14,6 +14,11 @@ public class PlayerController : NetworkBehaviour
     [SerializeField] private float cameraSensitivity = 5;
     [SerializeField] private float cameraOffset = 5;
 
+    [SerializeField] private GameObject missilePrefab;
+
+    [FormerlySerializedAs("missileZOffset")] [SerializeField]
+    private Vector3 missileOffset;
+
     private float _yaw;
     private float _pitch;
 
@@ -46,11 +51,31 @@ public class PlayerController : NetworkBehaviour
         {
             Cursor.lockState = CursorLockMode.Locked;
         }
+
+        ShootManager();
     }
 
     private void FixedUpdate()
     {
         UpdateMovement();
+    }
+
+    private void ShootManager()
+    {
+        if (!IsOwner) return;
+        
+        if (Input.GetMouseButtonDown(0))
+        {
+            FireMissileServerRpc();
+        }
+    }
+
+    [ServerRpc]
+    private void FireMissileServerRpc()
+    {
+        Instantiate(missilePrefab, transform.position + transform.TransformDirection(missileOffset),
+                transform.rotation)
+            .GetComponent<NetworkObject>().Spawn();
     }
 
     private void UpdateCamera()

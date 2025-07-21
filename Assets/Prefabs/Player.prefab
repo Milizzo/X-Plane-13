@@ -2720,7 +2720,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 2000
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -7777,7 +7777,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 3684516390
+  GlobalObjectIdHash: 3630501762
   InScenePlacedSourceGlobalObjectIdHash: 0
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
@@ -7803,6 +7803,8 @@ MonoBehaviour:
   verticalTurnSpeed: 0.1
   cameraSensitivity: 5
   cameraOffset: 15
+  missilePrefab: {fileID: 6929027530610375061, guid: 1c12391dec2894fd7960238426693e9b, type: 3}
+  missileOffset: {x: 3.5, y: 0, z: 7}
 --- !u!54 &7480095446344039194
 Rigidbody:
   m_ObjectHideFlags: 0
